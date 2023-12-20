@@ -1,0 +1,74 @@
+Numberplate,nbr_doors,nbr_place,color,type,horsespower,brand,price_h,price_d,state,date_return,agency_ID
+ABC123,4,5,Red,Sedan,150,Toyota,25,120,Available,-,1
+XYZ789,2,2,Blue,Convertible,200,Porsche,50,250,Rented,2023-11-25,2
+DEF456,5,7,Black,SUV,180,Ford,35,180,Available,-,1
+GHI789,4,5,White,Sedan,120,Honda,30,150,Available,-,3
+JKL234,4,5,Silver,Sedan,140,Chevrolet,28,140,Available,-,2
+MNO567,4,5,Gray,Hatchback,110,Hyundai,20,100,Available,-,3
+PQR890,2,2,Yellow,Coupe,250,Lamborghini,100,500,Rented,2023-11-26,2
+STU123,4,5,Black,SUV,200,Mercedes-Benz,45,220,Available,-,1
+VWX456,2,2,White,Convertible,180,BMW,60,300,Available,-,4
+YZA789,4,5,Blue,SUV,170,Jeep,40,200,Available,-,3
+BCD123,4,5,Red,Sedan,120,Toyota,25,120,Rented,2023-11-27,1
+CDE456,2,2,Black,Coupe,220,Audi,70,350,Available,-,2
+DEF789,4,5,Silver,Sedan,130,Nissan,30,150,Available,-,3
+EFG234,4,5,White,SUV,190,Range Rover,55,250,Available,-,4
+FGH567,2,2,Red,Convertible,180,Ferrari,120,600,Rented,2023-11-30,2
+GHI890,4,5,Blue,Sedan,150,Hyundai,25,120,Available,-,1
+HIJ123,4,5,Black,SUV,200,Land Rover,40,200,Available,-,3
+IJK456,2,2,Gray,Coupe,300,Porsche,80,400,Available,-,2
+JKL789,4,5,White,Sedan,140,Honda,30,150,Rented,2023-12-01,3
+KLM234,4,5,Silver,Sedan,160,Mazda,28,140,Available,-,2
+LMN567,4,5,Red,Hatchback,110,Toyota,20,100,Available,-,3
+MNO890,2,2,Blue,Coupe,250,Chevrolet,100,500,Available,-,4
+NOP123,4,5,Black,Sedan,120,Ford,25,120,Available,-,1
+OPQ456,4,5,Gray,SUV,180,Jeep,35,180,Available,-,3
+PQR789,2,2,Yellow,Convertible,200,BMW,60,300,Rented,2023-12-05,2
+QRS234,4,5,Black,Sedan,140,Volkswagen,28,140,Available,-,2
+RST567,4,5,Silver,Sedan,120,Honda,30,150,Available,-,3
+STU890,4,5,White,SUV,190,Mercedes-Benz,45,220,Available,-,1
+TUV123,2,2,Red,Convertible,180,Audi,70,350,Available,-,4
+UVW456,4,5,Blue,Sedan,150,Toyota,25,120,Rented,2023-12-06,1
+VWX789,4,5,Black,SUV,200,Range Rover,40,200,Available,-,3
+WXY234,2,2,Gray,Coupe,220,Porsche,80,400,Available,-,2
+XYZ567,4,5,White,Sedan,140,Nissan,30,150,Available,-,3
+YZA890,4,5,Silver,Sedan,160,Mazda,28,140,Rented,2023-12-07,2
+ZAB123,4,5,Red,Hatchback,110,Toyota,20,100,Available,-,3
+ABC456,2,2,Blue,Coupe,250,Chevrolet,100,500, Available,-,1
+BCD789,4,5,Black,Sedan,120,Ford,25,120,Available,-,1
+CDE234,4,5,Gray,SUV,180,Jeep,35,180,Available,-,3
+DEF567,2,2,Yellow,Convertible,200,BMW,60,300,Rented,2023-12-10,2
+EFG890,4,5,Black,Sedan,140,Volkswagen,28,140,Available,-,2
+FGH123,4,5,Silver,Sedan,120,Honda,30,150,Available,-,3
+GHI456,4,5,White,SUV,190,Mercedes-Benz,45,220,Available,-,1
+HIJ789,2,2,Red,Convertible,180,Audi,70,350,Available,-,4
+IJK234,4,5,Blue,Sedan,150,Toyota,25,120,Rented,2023-12-11,1
+JKL567,4,5,Black,SUV,200,Range Rover,40,200,Available,-,3
+KLM890,2,2,Gray,Coupe,220,Porsche,80,400,Available,-,2
+LMN123,4,5,White,Sedan,140,Nissan,30,150,Available,-,3
+MNO456,4,5,Silver,Sedan,160,Mazda,28,140,Rented,2023-12-12,2
+NOP789,4,5,Red,Hatchback,110,Toyota,20,100,Available,-,3
+OPQ234,2,2,Blue,Coupe,250,Chevrolet,100,500,Available,-,4
+PQR567,4,5,Black,Sedan,120,Ford,25,120,Available,-,1
+QRS890,4,5,Gray,SUV,180,Jeep,35,180,Rented,2023-12-15,3
+RST123,2,2,Yellow,Convertible,200,BMW,60,300,Available,-,2
+STU456,4,5,Black,Sedan,140,Volkswagen,28,140,Available,-,2
+TUV789,4,5,Silver,Sedan,120,Honda,30,150,Available,-,3
+UVW234,4,5,White,SUV,190,Mercedes-Benz,45,220,Available,-,1
+VWX567,2,2,Red,Convertible,180,Audi,70,350,Available,-,4
+WXY890,4,5,Blue,Sedan,150,Toyota,25,120,Rented,2023-12-16,1
+XYZ123,4,5,Black,SUV,200,Range Rover,40,200,Available,-,3
+YZA456,2,2,Gray,Coupe,220,Porsche,80,400,Available,-,2
+ZAB789,4,5,White,Sedan,140,Nissan,30,150,Available,-,3
+ABC234,4,5,Silver,Sedan,160,Mazda,28,140,Rented,2023-12-17,2
+BCD567,4,5,Red,Hatchback,110,Toyota,20,100,Available,-,3
+CDE890,2,2,Blue,Coupe,250,Chevrolet,100,500,Available,-,4
+DEF123,4,5,Black,Sedan,120,Ford,25,120,Available,-,1
+EFG456,4,5,Gray,SUV,180,Jeep,35,180,Available,-,3
+FGH789,2,2,Yellow,Convertible,200,BMW,60,300,Rented,2023-12-20,2
+GHI234,4,5,Black,Sedan,140,Volkswagen,28,140,Available,-,2
+HIJ567,4,5,Silver,Sedan,120,Honda,30,150,Available,-,3
+IJK890,4,5,White,SUV,190,Mercedes-Benz,45,220,Available,-,1
+JKL123,2,2,Red,Convertible,180,Audi,70,350,Available,-,4
+KLM456,4,5,Blue,Sedan,150,Toyota,25,120,Rented,2023-12-21,1
+

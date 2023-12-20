@@ -1,0 +1,282 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: Get_car
+  examples: |
+    - Show me all the cars available.
+    - List all cars in the database.
+    - Display the available cars.
+    - What cars do you have?
+    - I want to see the complete list of cars.
+    - Show me the car options.
+
+- intent: Get_available_car
+  examples: |
+    - List all the cars that I can rent.
+    - Which cars can I rent right now?
+    - Display the cars I can choose from.
+    - Show me all available [car_type] cars.
+    - List [sedan](car_type) cars that are available.
+    - What convertibale[car_type] cars can I rent?
+
+- intent: Rent_car
+  examples: |
+    - I want to rent a car.
+    - How can I rent a car?
+    - What's the process for renting a car?
+    - Book a car for me.
+    - I need to rent a vehicle.
+    - Help me with car rental.
+    - I need a [Toyota](car_brand) for [3](car_rent_duration) days.
+    - Can I rent a [black](car_color) [SUV](car_type) for [5](car_rent_duration) days?
+    - I want to rent a [blue](car_color) [sedan](car_type) for [2](car_rent_duration) days.
+    - Is it possible to rent a [Chevrolet](car_brand) for [4](car_rent_duration) days?
+    - I need a [red](car_color) [convertible](car_type) for [1](car_rent_duration) day.
+    - Can I rent a [gray](car_color) [coupe](car_type) for [7](car_rent_duration) days?
+    - I want a [Nissan](car_brand) for [2](car_rent_duration) days.
+    - Can you arrange a [white](car_color) [hatchback](car_type) for [3](car_rent_duration) days?
+    - I need to rent a [BMW](car_brand) for [6](car_rent_duration) days.
+    - I'd like to rent a [Ford](car_brand) for [3](car_rent_duration) days.
+    - Can you help me with a [silver](car_color) [SUV](car_type) for [4](car_rent_duration) days?
+    - I'm looking for a [blue](car_color) [convertible](car_type) for [2](car_rent_duration) days.
+    - How much for renting a [Jeep](car_brand) [black](car_color) [coupe](car_type) for [5](car_rent_duration) days?
+    - I want to rent a [Honda](car_brand) [white](car_color) [sedan](car_type) for [1](car_rent_duration) day.
+    - Do you have a [gray](car_color) [hatchback](car_type) available for [7](car_rent_duration) days?
+    - I'm interested in renting a [Mercedes-Benz](car_brand) for [2](car_rent_duration) days.
+    - Can I get a [red](car_color) [Porsche](car_brand) [convertible](car_type) for [3](car_rent_duration) days?
+    - What's the price for a [black](car_color) [Nissan](car_brand) [SUV](car_type) for [4](car_rent_duration) days?
+    - I'd like to rent a [Mazda](car_brand) [silver](car_color) [sedan](car_type) for [6](car_rent_duration) days.
+    - I need a [Toyota](car_brand) [black](car_color) [SUV](car_type) for [2](car_rent_duration) days.
+    - Looking to rent a [BMW](car_brand) [white](car_color) [coupe](car_type) for [5](car_rent_duration) days.
+    - Can you find me a [Chevrolet](car_brand) [red](car_color) [sedan](car_type) for [3](car_rent_duration) days?
+    - I'm interested in renting a [Hyundai](car_brand) [blue](car_color) [hatchback](car_type) for [1](car_rent_duration) day.
+    - How much for a [Range Rover](car_brand) [gray](car_color) [SUV](car_type) for [4](car_rent_duration) days?
+    - I want to rent a [Audi](car_brand) [silver](car_color) [convertible](car_type) for [2](car_rent_duration) days.
+    - Do you have a [Ferrari](car_brand) [yellow](car_color) [coupe](car_type) for [3](car_rent_duration) days?
+    - What's the cost for a [Land Rover](car_brand) [black](car_color) [SUV](car_type) for [1](car_rent_duration) day?
+    - Can I rent a [Nissan](car_brand) [gray](car_color) [sedan](car_type) for [7](car_rent_duration) days?
+    - I'd like to book a [Volkswagen](car_brand) [blue](car_color) [hatchback](car_type) for [2](car_rent_duration) days.
+
+- intent: get_car_info
+  examples: |
+    - Tell me more about this car.
+    - What are the details of this vehicle?
+    - Give me information about a car with number plate [ABC123](car_number_plate).
+    - Describe the car with number plate [DEF567](car_number_plate) in detail.
+    - Provide specs for this car.
+    - I want more details on this car..
+    - Give me information about a car with number plate [ZAB789](car_number_plate)
+    - Give me information about a car with number plate [ABC123](car_number_plate)
+    - Provide details for the car with number plate [XYZ789](car_number_plate)
+    - Get information about the vehicle with number plate [DEF456](car_number_plate)
+    - What can you tell me about the car having the number plate [GHI789](car_number_plate)
+    - Retrieve details for the vehicle registered as [JKL234](car_number_plate)
+    - Give me info on the car with number plate [MNO567](car_number_plate)
+    - Tell me about the car with number plate [PQR890](car_number_plate)
+    - Describe the vehicle with number plate [STU123](car_number_plate)
+    - Provide information for the car with number plate [VWX456](car_number_plate)
+    - What do you know about the car with number plate [YZA789](car_number_plate)
+    - Give me details for the car with number plate [BCD123](car_number_plate)
+    - Retrieve information for the vehicle with number plate [CDE456](car_number_plate)
+    - I want to know details about the car with number plate [DEF789](car_number_plate)
+    - Tell me about the vehicle registered under [EFG234](car_number_plate)
+    - Provide information on the car having the number plate [FGH567](car_number_plate)
+    - Get details for the car with the number plate [GHI890](car_number_plate)
+    - Can you describe the car with the number plate [HIJ123](car_number_plate)?
+    - What information do you have about the car with number plate [IJK456](car_number_plate)?
+    - Give me details on the vehicle with the number plate [JKL789](car_number_plate)
+    - Describe the car with the number plate [KLM234](car_number_plate)
+    - Provide information for the car with number plate [LMN567](car_number_plate)
+    - Tell me about the vehicle registered as [MNO890](car_number_plate)
+    - Get details for the car with the number plate [NOP123](car_number_plate)
+    - Retrieve information for the vehicle with the number plate [OPQ456](car_number_plate)
+
+- intent: get_agency_info
+  examples: |
+    - Tell me about the rental agency.
+    - What information do you have about the agency?
+    - Details about the rental service.
+    - Provide info about the agency.
+    - What's the contact information for the agency?
+    - Tell me more about the rental location.
+    - What agencies are in [New York](agency_city)?
+    - Tell me about the agency in [Los Angeles](agency_city).
+    - Details about rental services in [Chicago](agency_city).
+    - Provide info about agencies in [San Francisco](agency_city).
+    - What's the contact information for the agency in [Miami](agency_city)?
+    - Tell me more about the rental location in [Las Vegas](agency_city).
+    - What agencies are in [Houston](agency_city)?
+
+- intent: hello_world
+  examples: |
+    - hello world
+    - Say hello world
+
+- intent: ask_brand_car
+  examples: |
+    - I want a [Toyota](car_brand).
+    - Can I get a [Porsche](car_brand)?
+    - Show me [Ford](car_brand) cars.
+    - Looking for a [Honda](car_brand).
+    - Any [Chevrolet](car_brand) available?
+    - [Hyundai](car_brand) models, please.
+    - [Lamborghini](car_brand), if possible.
+    - Show me [Mercedes-Benz](car_brand) options.
+    - [BMW](car_brand) is my preference.
+    - I'm interested in [Jeep](car_brand) cars.
+    - [Audi](car_brand) vehicles, please.
+    - [Nissan](car_brand) cars for rent.
+    - Any [Range Rover](car_brand) available?
+    - I'm looking for a [Ferrari](car_brand).
+    - [Land Rover](car_brand) options?
+    - [Mazda](car_brand) cars, please.
+    - [Volkswagen](car_brand) vehicles.
+
+- intent: Validate_Rent_car
+  examples: |
+    - I want to proceed with renting this car.
+    - Confirm the rental for the car with number plate [XYZ789](car_number_plate).
+    - Yes, go ahead and rent the car.
+    - I'm ready to validate the car rental request.
+    - Confirm the car rental for the vehicle with number plate [ABC456](car_number_plate).
+    - Yes, I want to rent this specific car.
+    - Proceed with the car rental for the vehicle with number plate [DEF123](car_number_plate).
+    - I confirm the rental for the car with number plate [GHI789](car_number_plate).
+    - Yes, I want to rent the car mentioned earlier.
+    - I want to rent the car with number plate [JKL234](car_number_plate).
+    - Yes, I want to rent the car with number plate [MNO567](car_number_plate).
+    - I confirm the car rental for the vehicle with number plate [PQR890](car_number_plate).
+    - Yes, I want to rent the car with number plate [STU123](car_number_plate).
+    - I want to rent the car with number plate [VWX456](car_number_plate).
+    - Yes, I want to rent the car with number plate [YZA789](car_number_plate).
+    - I confirm the car rental for the vehicle with number plate [BCD123](car_number_plate).
+    - Yes, I want to rent the car with number plate [CDE456](car_number_plate).
+    - I want to rent the car with number plate [DEF789](car_number_plate).
+    - Yes, I want to rent the car with number plate [EFG234](car_number_plate).
+    - I confirm the car rental for the vehicle with number plate [FGH567](car_number_plate).
+    - Yes, I want to rent the car with number plate [GHI890](car_number_plate).
+    - I want to rent the car with number plate [HIJ123](car_number_plate).
+    - Yes, I want to rent the car with number plate [IJK456](car_number_plate).
+    - I want to proceed with renting this car for [3](car_rent_duration) days.
+    - Confirm the rental for the car with number plate [XYZ789](car_number_plate) for [5](car_rent_duration) days.
+    - Yes, go ahead and rent the car for [2](car_rent_duration) days.
+    - I'm ready to validate the car rental request for the car with number plate [ABC456](car_number_plate) for [4](car_rent_duration) days.
+    - Confirm the car rental for the vehicle with number plate [DEF123](car_number_plate) for [7](car_rent_duration) days.
+    - Yes, I want to rent this specific car for [1](car_rent_duration) day.
+    - Proceed with the car rental for the vehicle with number plate [GHI789](car_number_plate) for [3](car_rent_duration) days.
+    - I confirm the rental for the car with number plate [JKL234](car_number_plate) for [2](car_rent_duration) days.
+    - Yes, I want to rent the car mentioned earlier for [5](car_rent_duration) days.
+    - I want to rent the car with number plate [MNO567](car_number_plate) for [7](car_rent_duration) days.
+    - I confirm the car rental for the vehicle with number plate [PQR890] for [4](car_rent_duration) days.
+    - Yes, I want to rent the car with number plate [STU123](car_number_plate) for [1](car_rent_duration) day.
+    - I want to rent the car with number plate [VWX456](car_number_plate) for [3](car_rent_duration) days.
+    - Yes, I want to rent the car with number plate [YZA789](car_number_plate) for [6](car_rent_duration) days.
+    - I confirm the car rental for the vehicle with number plate [BCD123](car_number_plate) for [2](car_rent_duration) days.
+    - Yes, I want to rent the car with number plate [CDE456](car_number_plate) for [5](car_rent_duration) days.
+    - I want to rent the car with number plate [DEF789](car_number_plate) for [3](car_rent_duration) days.
+    - Yes, I want to rent the car with number plate [EFG234](car_number_plate) for [1](car_rent_duration) day.
+    - I confirm the car rental for the vehicle with number plate [FGH567](car_number_plate) for [4](car_rent_duration) days.
+    - [1](car_rent_duration) day.
+    -[4](car_rent_duration) day.
+    -[6](car_rent_duration) day.
+    -[9](car_rent_duration) day.
+    -[2](car_rent_duration) day.
+
+- intent: get_car_agency 
+  examples: |
+    - What can I rent a car?
+    - What can I rent a car in [New York](agency_city)?
+    - What can I rent a car in [Los Angeles](agency_city)?
+    - What can I rent a car in [Chicago](agency_city)?
+    - What can I rent a car in [San Francisco](agency_city)?
+    - What can I rent a car in [Miami](agency_city)?
+    - What can I rent a car in [Las Vegas](agency_city)?
+    - What can I rent a car in [Houston](agency_city)? 

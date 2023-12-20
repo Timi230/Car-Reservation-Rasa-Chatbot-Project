@@ -1,0 +1,81 @@
+version: '3.1'
+intents:
+- Get_available_car
+- Get_car
+- Rent_car
+- affirm
+- ask_brand_car
+- bot_challenge
+- deny
+- get_agency_info
+- get_car_info
+- goodbye
+- greet
+- hello_world
+- mood_great
+- mood_unhappy
+- Validate_Rent_car
+- get_car_agency
+ 
+entities:
+- car_number_plate
+- car_state
+- car_place
+- car_type
+- car_brand
+- car_rent_duration
+- car_price_range
+- car_color
+- agency_city
+
+actions:
+- utter_greet
+- action_provide_car_info
+- utter_happy
+- action_show_all_cars
+- action_show_available_cars
+- action_ask_rental_details
+- action_provide_agency_info
+- utter_goodbye
+- action_hello_world
+- action_confirm_rental
+- action_get_car_in_agency_city
+
+slots:
+  car_number_plate:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: car_number_plate
+
+  car_rent_duration:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: car_rent_duration
+
+  agency_city:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: agency_city
+
+
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.redd.it/hhwh9rd7xq261.png
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Chao fdp
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

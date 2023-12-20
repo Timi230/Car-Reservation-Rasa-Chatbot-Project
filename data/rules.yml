@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Show all cars
+  steps:
+  - intent: Get_car
+  - action: action_show_all_cars
+
+- rule: Show available cars
+  steps:
+  - intent: Get_available_car
+  - action: action_show_available_cars
+
+- rule: Rent a car
+  steps:
+  - intent: Rent_car
+  - action: action_ask_rental_details
+
+- rule: Provide car information
+  steps:
+  - intent: get_car_info
+  - action: action_provide_car_info
+
+- rule: Provide agency information
+  steps:
+  - intent: get_agency_info
+  - action: action_provide_agency_info
+
+- rule : Say hello world
+  steps:
+  - intent: hello_world
+  - action: action_hello_world
+
+- rule : Confirm rental
+  steps:
+  - intent: Validate_Rent_car
+  - action: action_confirm_rental
+
+- rule: Get car in agency city
+  steps:
+  - intent: get_car_agency
+  - action: action_get_car_in_agency_city

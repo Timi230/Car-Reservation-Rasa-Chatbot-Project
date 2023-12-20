@@ -1,0 +1,149 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+
+- story: Greet and ask about available cars
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Get_available_car
+  - action: action_show_available_cars
+
+- story: User wants to rent a car
+  steps:
+  - intent: Rent_car
+  - action: action_ask_rental_details
+
+- story: User asks for information about a specific car
+  steps:
+  - intent: get_car_info
+  - action: action_provide_car_info
+
+- story: User asks for information about a specific agency
+  steps:
+  - intent: get_agency_info
+  - action: action_provide_agency_info
+
+- story: User wants to end the conversation
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_car_info
+    entities:
+    - car_number_plate: ABC123
+  - slot_was_set:
+    - car_number_plate: ABC123
+  - action: action_provide_car_info
+  - intent: get_car_info
+  - action: action_provide_car_info
+  - intent: mood_great
+  - action: utter_happy
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_car_info
+    entities:
+    - car_number_plate: ABC123
+  - slot_was_set:
+    - car_number_plate: ABC123
+  - action: action_provide_car_info
+
+- story: User wants to see cars
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Get_car
+  - action: action_show_all_cars
+  - intent: affirm
+  - action: action_show_all_cars
+
+- story: User decides to stop
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Get_car
+  - action: action_show_all_cars
+  - intent: deny
+  
+- story: User wants to rent a car path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent : Get_available_car
+  - action: action_show_available_cars
+  - intent: get_car_info
+  - action: action_provide_car_info
+  - intent: Rent_car
+  - action: action_ask_rental_details
+  - intent: Validate_Rent_car
+  - action: action_confirm_rental
+
+- story: User wants to rent a car path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Rent_car
+  - action: action_ask_rental_details
+  - intent: Validate_Rent_car
+  - action: action_confirm_rental
+
+- story: User wants to rent a car path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Rent_car
+  - action: action_ask_rental_details
+  - intent: Validate_Rent_car
+  - action: action_confirm_rental
+  - intent: Validate_Rent_car
+  - action: action_confirm_rental
+
+- story: User wants to rent a car path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_agency_info
+  - action: action_provide_agency_info
+  - intent: get_car_agency
+  - action: action_get_car_in_agency_city
+  - intent: Rent_car
+  - action: action_ask_rental_details
+  - intent: Validate_Rent_car
+  - action: action_confirm_rental
