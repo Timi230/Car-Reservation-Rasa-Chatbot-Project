@@ -1,4 +1,4 @@
-# Car-Reservation-Rasa-Chatbot-Project
+# Car Reservation Rasa Chatbot Project
 
 Welcome to the repository for my car reservation chatbot project, completed during my international semester where I took a course on databases and deep learning. This project allowed me to deepen my knowledge of databases and explore the TensorFlow library. The creation of the chatbot was done using the Rasa tool, enabling the development of assistants with artificial intelligence.
 
