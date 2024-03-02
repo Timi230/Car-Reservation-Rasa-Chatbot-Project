@@ -39,14 +39,6 @@ else :
   print(40*'-')
   print('\n')
   
-# async def create_pool():
-#     return await aiomysql.create_pool(
-#         host='localhost',
-#         user='root',
-#         password='Hf1fyjd4',
-#         db='Car_agency'
-#     )
-
   
 
 class ActionHelloWorld(Action):
