@@ -21,7 +21,7 @@ from datetime import datetime, timedelta
 
 
 try:
-    cnx = mysql.connector.connect(user='root', password='Hf1fyjd4',
+    cnx = mysql.connector.connect(user='root', password='*******',
                                 host='localhost',
                                 database='Car_agency')
 
